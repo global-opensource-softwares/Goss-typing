@@ -12,9 +12,9 @@ export function setLocalStorageConfig(val: MonkeyTypes.Config): void {
 let loadDone: (...stuff: any[]) => any;
 
 const defaultConfig: MonkeyTypes.Config = {
-  theme: "serika_dark",
-  themeLight: "serika",
-  themeDark: "serika_dark",
+  theme: "blueberry_dark",
+  themeLight: "blueberry_dark",
+  themeDark: "blueberry_dark",
   autoSwitchTheme: false,
   customTheme: false,
   customThemeColors: [

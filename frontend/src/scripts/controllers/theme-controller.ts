@@ -86,7 +86,7 @@ const loadStyle = async function (name: string): Promise<void> {
 export function apply(themeName: string, isPreview = false): void {
   clearCustomTheme();
 
-  let name = "serika_dark";
+  let name = "blueberry_dark";
   if (themeName !== "custom") {
     name = themeName;
     Misc.swapElements(

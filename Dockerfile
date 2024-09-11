@@ -22,5 +22,5 @@ RUN cd frontend && npm run build:live
 EXPOSE 8080
 
 # Command to run the application
-CMD ["npm", "start:dev"]
+CMD ["node", "dist/monkey.js"]
 
