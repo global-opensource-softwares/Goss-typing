@@ -1,24 +1,27 @@
-# Use an official Node.js 20 runtime as a parent image
+# Use Node.js 20 as the base image
 FROM node:20
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json (if you have one) to the working directory
-COPY package*.json ./
+# Copy package.json and package-lock.json
+COPY frontend/package*.json ./frontend/
 
-# Install dependencies
-RUN npm install
+# Install dependencies for the frontend
+RUN cd frontend && npm install
 
-# Copy the rest of your application code to the working directory
-COPY . .
+# Copy the rest of the frontend files
+COPY frontend ./frontend
 
-# Build the frontend assets
+# Debugging step: List files in the frontend directory
+RUN ls -al frontend
+
+# Run the build command
 RUN cd frontend && npm run build:live
 
-# Expose port 8080
+# Expose the port
 EXPOSE 8080
 
-# Define the command to run your app
+# Command to run the application
 CMD ["npm", "start:dev"]
 
