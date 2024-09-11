@@ -1,10 +1,9 @@
 {
-  "name": "monkeytype-frontend",
+  "name": "GOSS-Typing-frontend",
   "version": "1.0.0",
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "dep-graph": "madge -c -i \"dep-graph.png\" ./src/scripts",
     "build": "npx gulp build",
     "build:live": "npx gulp build-production",
     "build:webpack": "webpack --config webpack.config.js",

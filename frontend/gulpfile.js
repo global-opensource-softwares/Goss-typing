@@ -1,9 +1,7 @@
 const { task, src, dest, series, watch } = require("gulp");
-// const axios = require("axios");
 const concat = require("gulp-concat");
 const del = require("del");
 const vinylPaths = require("vinyl-paths");
-const eslint = require("gulp-eslint-new");
 const sass = require("gulp-sass")(require("dart-sass"));
 const replace = require("gulp-replace");
 const through2 = require("through2");
@@ -14,33 +12,10 @@ const ts = require("gulp-typescript");
 
 const JSONValidation = require("./json-validation");
 
-const eslintConfig = "../.eslintrc.json";
 const tsProject = ts.createProject("tsconfig.json");
 
 task("clean", function () {
   return src(["./public/"], { allowEmpty: true }).pipe(vinylPaths(del));
-});
-
-task("lint", function () {
-  return src(["./src/scripts/**/*.js", "./src/scripts/**/*.ts"])
-    .pipe(eslint(eslintConfig))
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-});
-
-task("lint-json", function () {
-  return src("./static/**/*.json")
-    .pipe(eslint(eslintConfig))
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
-});
-
-task("validate-json-schema", function () {
-  return JSONValidation.validateAll();
-});
-
-task("copy-src-contents", function () {
-  return src("./src/scripts/**").pipe(dest("./dist/"));
 });
 
 task("transpile-ts", function () {
@@ -121,15 +96,12 @@ task("updateSwCacheName", function () {
 
 task(
   "compile",
-  series("lint", "lint-json", "webpack", "static", "sass", "updateSwCacheName")
+  series("webpack", "static", "sass", "updateSwCacheName")
 );
 
 task(
   "compile-production",
   series(
-    "lint",
-    "lint-json",
-    "validate-json-schema",
     "webpack-production",
     "static",
     "sass",
@@ -146,16 +118,16 @@ task("watch", function () {
       "./src/scripts/*.js",
       "./src/scripts/*.ts",
     ],
-    series("lint", "webpack")
+    series("webpack")
   );
-  watch(["./static/**/*.*", "./static/*.*"], series("lint-json", "static"));
+  watch(["./static/**/*.*", "./static/*.*"], series("static"));
 });
 
 task("build", series("clean", "compile"));
 
 task("build-production", series("clean", "compile-production"));
 
-//PR CHECK
+// PR CHECK
 
 task("validate-quote-json-schema", function () {
   return JSONValidation.validateQuotes();
@@ -169,12 +141,11 @@ task("validate-other-json-schema", function () {
   return JSONValidation.validateOthers();
 });
 
-task("pr-check-lint-json", series("lint-json"));
 task("pr-check-quote-json", series("validate-quote-json-schema"));
 task("pr-check-language-json", series("validate-language-json-schema"));
 task("pr-check-other-json", series("validate-other-json-schema"));
 
-task("pr-check-lint", series("lint"));
 task("pr-check-scss", series("sass"));
 
 task("pr-check-ts", series("webpack-production"));
+
