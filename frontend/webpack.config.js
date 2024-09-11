@@ -4,7 +4,7 @@ const CircularDependencyPlugin = require("circular-dependency-plugin");
 let circularImportNum = 0;
 
 module.exports = {
-  mode: "development", // Change to 'production' for production
+  mode: "production", // Change to 'production' for production
   devtool: false,
   entry: path.resolve(__dirname, "src/scripts/index.ts"),
   resolve: {
