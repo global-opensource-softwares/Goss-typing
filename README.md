@@ -1,56 +1,59 @@
-[![](https://github.com/Miodec/monkeytype/blob/master/frontend/static/images/githubbanner2.png?raw=true)](https://monkeytype.com/)
-<br />
+[![](https://via.placeholder.com/1200x300/0044cc/ffffff?text=Under+Construction)](https://yourwebsite.com/)
 
-<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-<img align="left" alt="TypeScript" width="26px" src="https://iconape.com/wp-content/png_logo_vector/typescript.png" />
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" />
 <br />
+<p align="left">
+  <img alt="JavaScript" width="36px" src="https://img.icons8.com/ios-filled/50/1f75fe/javascript.png" />
+  <img alt="TypeScript" width="36px" src="https://img.icons8.com/ios-filled/50/007acc/typescript.png" />
+  <img alt="HTML5" width="36px" src="https://img.icons8.com/ios-filled/50/e34f26/html-5.png" />
+  <img alt="CSS3" width="36px" src="https://img.icons8.com/ios-filled/50/1f75fe/css3.png" />
+  <img alt="Sass" width="36px" src="https://img.icons8.com/ios-filled/50/c76494/sass.png" />
+</p>
+
 
 # About
 
-Monkeytype is a minimalistic and customizable typing test. It features many test modes, an account system to save your typing speed history, and user-configurable features like themes, sounds, a smooth caret, and more.
+**GOSS Typing Practice** is a modern and customizable typing practice application designed to enhance your typing skills.
 
-# Features
+## Key Features
 
-- minimalistic design with optional ads
-- look at what you are typing
-- focus mode
-- different test modes
-- punctuation mode
-- themes
-- quotes
-- live wpm
-- smooth caret
-- account system
-- command line
-- and much more
+- **Minimalistic Design**: Focuses on typing without distractions.
+- **Real-Time Feedback**: See your WPM and accuracy instantly.
+- **Focus Mode**: Reduces distractions to help you concentrate.
+- **Multiple Test Modes**: Various modes to challenge different typing skills.
+- **Punctuation Mode**: Tests your accuracy with punctuation.
+- **Custom Themes**: Personalize the look and feel.
+- **Quote-Based Tests**: Practice with a variety of quotes.
+- **Smooth Caret**: Enhances typing visibility.
+- **Account System**: Track and save your typing history.
+- **Command Line Interface**: Extra functionalities via CLI.
 
-# Discord bot
+## Reporting Bugs or Requesting Features
 
-On the [Monkeytype Discord server](https://www.discord.gg/monkeytype), we added a Discord bot to auto-assign roles on our server. You can find its code over at https://github.com/Miodec/monkey-bot
+If you encounter issues or have feature suggestions, you can:
 
-# Bug report or Feature request
+- [Report a bug](https://github.com/YourUsername/goss-typing-practice/issues)
+- [Request a feature](https://github.com/YourUsername/goss-typing-practice/issues)
+- [Start a discussion](https://github.com/YourUsername/goss-typing-practice/discussions)
 
-If you encounter a bug or have a feature request, [send me a message on Reddit](https://reddit.com/user/miodec), [create an issue](https://github.com/Miodec/monkeytype/issues), [create a discussion thread](https://github.com/Miodec/monkeytype/discussions), or [join the Discord server](https://www.discord.gg/monkeytype).
+## Contributing
 
-# Want to Contribute?
+We welcome contributions! Check out our [CONTRIBUTING.md](https://github.com/YourUsername/goss-typing-practice/blob/master/CONTRIBUTING.md) for details on how to contribute.
 
-Refer to [CONTRIBUTING.md.](https://github.com/Miodec/monkeytype/blob/master/CONTRIBUTING.md)
+## Code of Conduct
 
-# Code of Conduct
+Please review our [Code of Conduct](https://github.com/YourUsername/goss-typing-practice/blob/master/CODE_OF_CONDUCT.md) before contributing.
 
-Before contributing to this repository, please read the [code of conduct.](https://github.com/Miodec/monkeytype/blob/master/CODE_OF_CONDUCT.md)
+## Support
 
-# Credits
+If you like our project and want to support it, consider:
 
-[Montydrei](https://www.reddit.com/user/montydrei) for the name suggestion.
+- [Donating to GOSS Typing Practice](https://ko-fi.com/yourusername) to help with development.
+- [Donating to Monkeytype](https://ko-fi.com/monkeytype) for their ongoing work.
 
-Everyone who provided valuable feedback on the [original Reddit post](https://www.reddit.com/r/MechanicalKeyboards/comments/gc6wx3/experimenting_with_a_completely_new_type_of/) for the prototype of this website.
+## Credits
 
-All of the [contributors](https://github.com/Miodec/monkeytype/graphs/contributors) that have helped with implementing various features, adding themes, fixing bugs, and more.
+We have scrapped the backend and revamped only the frontend, drawing inspiration from the [Monkeytype](https://monkeytype.com). Our version is currently a static application.
 
-# Support
+---
 
-If you wish to support further development and feel extra awesome, you can [donate](https://ko-fi.com/monkeytype), [become a Patron](https://www.patreon.com/monkeytype) or [buy a t-shirt](https://www.monkeytype.store/).
+**License:** This project is licensed under the [GPLv3](https://github.com/YourUsername/goss-typing-practice/blob/master/LICENSE). You are free to use, modify, and distribute the software as long as you make your modifications available under the same terms.
