@@ -31,17 +31,17 @@
 
 If you encounter issues or have feature suggestions, you can:
 
-- [Report a bug](https://github.com/YourUsername/goss-typing-practice/issues)
-- [Request a feature](https://github.com/YourUsername/goss-typing-practice/issues)
-- [Start a discussion](https://github.com/YourUsername/goss-typing-practice/discussions)
+- [Report a bug](https://github.com/IntegerAlex/goss-typing-practice/issues)
+- [Request a feature](https://github.com/IntegerAlex/goss-typing-practice/issues)
+- [Start a discussion](https://github.com/IntegerAlex/goss-typing-practice/discussions)
 
 ## Contributing
 
-We welcome contributions! Check out our [CONTRIBUTING.md](https://github.com/YourUsername/goss-typing-practice/blob/master/CONTRIBUTING.md) for details on how to contribute.
+We welcome contributions! Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) for details on how to contribute.
 
 ## Code of Conduct
 
-Please review our [Code of Conduct](https://github.com/YourUsername/goss-typing-practice/blob/master/CODE_OF_CONDUCT.md) before contributing.
+Please review our [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing.
 
 ## Support
 
@@ -56,4 +56,4 @@ We have scrapped the backend and revamped only the frontend, drawing inspiration
 
 ---
 
-**License:** This project is licensed under the [GPLv3](https://github.com/YourUsername/goss-typing-practice/blob/master/LICENSE). You are free to use, modify, and distribute the software as long as you make your modifications available under the same terms.
+**License:** This project is licensed under the [GPLv3](./LICENSE). You are free to use, modify, and distribute the software as long as you make your modifications available under the same terms.
