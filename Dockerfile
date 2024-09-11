@@ -5,13 +5,12 @@ FROM node:20
 WORKDIR /app
 
 # Copy package.json and package-lock.json
-COPY frontend/package*.json ./frontend/
+COPY ./    ./
 
 # Install dependencies for the frontend
 RUN cd frontend && npm install
 
 # Copy the rest of the frontend files
-COPY frontend ./frontend
 
 # Debugging step: List files in the frontend directory
 RUN ls -al frontend
