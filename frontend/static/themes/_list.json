@@ -1,0 +1,33 @@
+[
+  {
+    "name": "onedark",
+    "bgColor": "#2f343f",
+    "mainColor": "#98c379"
+  },
+  {
+    "name": "blueberry_dark",
+    "bgColor": "#212b42",
+    "mainColor": "#df4576"
+  },
+  {
+    "name": "retrocast",
+    "bgColor": "#07737a",
+    "mainColor": "#88dbdf"
+  },
+  {
+    "name": "dracula",
+    "bgColor": "#282a36",
+    "mainColor": "#f8f8f2"
+  },
+  {
+    "name": "nord",
+    "bgColor": "#2e3440",
+    "mainColor": "#88c0d0"
+  },
+  {
+    "name": "solarized_dark",
+    "bgColor": "#002b36",
+    "mainColor": "#859900"
+  }
+]
+
